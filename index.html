@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجتمع الكيمياء الحيوية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #001f4d;
+    }
+
+    header {
+      background-color: navy;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      max-width: 80px;
+      margin: 0;
+    }
+
+    .logo img {
+      width: 100%;
+      height: auto;
+      border-radius: 0px;
+      box-shadow: 0 0 0px rgba(255, 255, 255, 0.9);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .container {
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 26px;
+      color: #001f4d;
+      border-bottom: 2px solid #00c2ff;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background-color: #f0f8ff;
+      padding: 20px;
+      border-radius: 16px;
+      text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: #001f4d;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background-color: #e0f7fa;
+    }
+
+    textarea, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      font-family: 'Cairo', sans-serif;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #00bcd4;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: right;
+      padding: 25px;
+      background-color: #f5f5f5;
+      color: #001f4d;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #007acc;
+    }
+
+    #menuToggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 28px;
+      background-color: navy;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #sideMenu {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 220px;
+      height: 100%;
+      background-color: #001f4d;
+      color: white;
+      padding-top: 80px;
+      transition: left 0.3s;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #sideMenu a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      border-bottom: 1px solid #004080;
+    }
+
+    #sideMenu a:hover {
+      background-color: #003366;
+    }
+
+    .container img:not(.logo img) {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="IMG_٢٠٢٥٠٤٠٩_٢١٢٤٤٥ (1) (1).jpg" alt="شعار المجتمع">
+    </div>
+    <br></br>
+    <h1>مجتمع الكيمياء الحيوية التعليمي</h1>
+    <p>مرحباً بكم في منصتكم التعليمية المتخصصة في عالم الكيمياء الحيوية، حيث نربط المعرفة بالتجربة، ونقدم محتوى علمي دقيق بأسلوب تفاعلي حديث.</p>
+  </header>
+
+  <div id="menuToggle" onclick="toggleMenu()">☰</div>
+
+  <div id="sideMenu">
+    <a href="#services">خدماتنا</a>
+    <a href="#sections">أقسام المجتمع</a>
+    <a href="#supervisors">المشرفين</a>
+    <a href="#members">الأعضاء</a>
+    <a href="#ai">الذكاء الاصطناعي التعليمي</a>
+  </div>
+
+  <div class="container">
+    <section id="services">
+      <h2>خدماتنا</h2>
+      <img src="خدماتنا.png" alt="خدماتنا">
+      <div class="grid">
+        <a href="workshops.html" class="card">ورش عمل تفاعلية</a>
+        <a href="lectures.html" class="card">محاضرات وندوات علمية</a>
+        <a href="resources.html" class="card">موارد تعليمية شاملة</a>
+      </div>
+    </section>
+
+    <section id="sections">
+      <h2>أقسام المجتمع</h2>
+      <img src="images (4) (29).jpeg" alt="أقسام المجتمع">
+      <div class="grid">
+        <a href="activities.html" class="card">الأنشطة التنظيمية</a>
+        <a href="academic.html" class="card">القسم الأكاديمي</a>
+        <a href="art.html" class="card">قسم الإبداع الفني</a>
+        <a href="podcast.html" class="card">بودكاست الكيمياء الحيوية</a>
+        <a href="devices.html" class="card">أجهزة الكيمياء الحيوية</a>
+        <a href="lab3d.html" class="card">المختبر 3D</a>
+        <a href="experiments.html" class="card">تجارب الكيمياء الحيوية</a>
+      
+      </div>
+    </section>
+
+    <section id="books">
+      <h2>الكتب</h2>
+      <img src="pngtree-d-illustration-of-dna-spiral-held-by-a-hand-exploring-genetics-image_3765967.jpg" alt="الكتب">
+      <p>استعرض مجموعتنا من الكتب العلمية المتخصصة في الكيمياء الحيوية وتخصصاتها المختلفة.</p>
+      <div class="grid">
+        <a href="books_list.html" class="card">قائمة الكتب</a>
+        <a href="new_releases.html" class="card">الإصدارات الجديدة</a>
+        <a href="recommended_books.html" class="card">الكتب الموصى بها</a>
+        <a href="research.html" class="card">مقالات البحث</a>
+      </div>
+    </section>
+
+    <section id="supervisors">
+      <h2>المشرفين</h2>
+      <img src="mushrafen.jpg" alt="صورة المشرفين">
+      <p>يضم فريق الإشراف نخبة من المتخصصين في الكيمياء الحيوية وعلوم الحياة، ويبلغ عددهم: <strong>16</strong> مشرفاً.</p>
+    </section>
+
+    <section id="members">
+      <h2>الأعضاء</h2>
+      <img src="alada.jpg" alt="صورة الأعضاء">
+      <p>شارك في مناقشاتنا العلمية وتعرّف على نخبة من المهتمين والمتميزين في المجال الحيوي.</p>
+    </section>
+
+    <section id="ai">
+      <h2>الذكاء الاصطناعي التعليمي</h2>
+      <img src="IMG-20250409-WA0043.jpg" alt="الذكاء الصناعي">
+      <p>اختر نوع الخدمة ثم اضغط على الزر المناسب للحصول على المساعدة باستخدام الذكاء الاصطناعي:</p>
+      <select id="aiFunction">
+        <option value="ask">اسألني سؤال</option>
+        <option value="translate">ترجمة النص</option>
+        <option value="summarize">تلخيص المقال</option>
+        <option value="mindmap">رسم مخطط ذهني</option>
+      </select>
+      <div style="margin-top: 20px;">
+        <button onclick="redirectToAI()">ابدأ الآن</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>تواصل معنا</h2>
+      <p>هل لديك اقتراح أو استفسار؟ راسلنا عبر البريد الإلكتروني: <a href="mailto:info@biochemcommunity.org">info@biochemcommunity.org</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 مجتمع الكيمياء الحيوية. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sideMenu');
+      menu.style.left = menu.style.left === '0px' ? '-250px' : '0px';
+    }
+
+    function redirectToAI() {
+      const choice = document.getElementById('aiFunction').value;
+      let url = "";
+
+      switch (choice) {
+        case "ask":
+          url = "https://www.abyadh.com/"; //  للمساعده ذكي
+          break;
+        case "translate":
+          url = "https://sider.ai/ar/translator/text-translator"; // موقع ترجمة  ذكي
+          break;
+        case "summarize":
+          url = "https://smodin.io/ar/%D9%85%D9%84%D8%AE%D8%B5%D8%A7%D9%84%D9%86%D8%B5"; // موقع تلخيص بالعربية
+          break;
+        case "mindmap":
+          url = "https://www.yeschat.ai/ar/gpts-2OToJPcnh7-MindMapGPT"; // أداة لرسم الخرائط الذهنية
+          break;
+        default:
+          url = "#";
+      }
+
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
